@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 5px solid rgb(11, 236, 11);
+      }
+
+      .box {
+        flex: 0 0 300px;
+        height: 120px;
+        background-color: #C30F16;
+        margin: 5px;
+        font-size: xx-large;
+        color: rgb(11, 236, 11);
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+      }
+      button {
+        background-color: #C30F16;
+        color: rgb(11, 236, 11);
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: rgb(11, 236, 11);
+        color: #C30F16;
+        text-align: center;
+        font-size: xx-large;
+      }
+      .cocktail_pic {
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .care {
+        float: right;
+        margin-right: 3px;
+        font-size: large;
+        font-weight: bold;
+        width: 50%;
+      }
+    </style>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="cocktail_info.js"></script>
+    <script src="cocktail_setup.js"></script>
+  </head>
+  <body>
+    <h1>Holiday Cocktails For The Weary</h1>
+    <p>Mouse over for ingredients, click for calories</p>
+
+    <div class="wrapper">
+    </div>
+  </body>
+</html>
